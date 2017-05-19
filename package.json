@@ -10,8 +10,8 @@
     "type": "git",
     "url": "git+https://github.com/Creamsicle/chromatic.git"
   },
-  "author": "danPixl",
-  "license": "Fair",
+  "author": "Creamsicle",
+  "license": "See README.md",
   "bugs": {
     "url": "https://github.com/Creamsicle/chromatic/issues"
   },
