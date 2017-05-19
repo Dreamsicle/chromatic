@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/Creamsicle/chromatic#readme",
   "dependencies": {
-    "electron": "^1.6.8"
+    "electron": "^1.6.8",
+    "require-directory": "^2.1.1"
   }
 }
