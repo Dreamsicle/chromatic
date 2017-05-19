@@ -2,7 +2,7 @@ This work is Copyright © 2017 Creamsicle.
 
 Licensor: Creamsicle
 
-Work: Quantum
+Work: Chromatic
 
 The Licensor grants you permission to a transferable and fully-paid license that allows you to use the Work, publicly display the Work, and create derivatives of the Work.
 
