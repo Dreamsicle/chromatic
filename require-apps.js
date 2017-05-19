@@ -15,7 +15,7 @@ if (process.platform == 'win32') {
 }
 
 if (!fs.existsSync(appInstallFolder)){
-    fs.mkdirSync(appInstallFolder);
+    fs.mkdirSync(appInstallFolder)
 }
 
 module.exports = requireDirectory(module, appInstallFolder)

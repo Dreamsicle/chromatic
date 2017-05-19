@@ -1,0 +1,15 @@
+body {
+    background-color: slategrey;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%
+}
+
+.body-container {
+    width: 50%;
+    height: 50%;
+    background-color: goldenrod;
+    display: inline-block
+}
