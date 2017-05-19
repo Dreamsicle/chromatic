@@ -1,0 +1,22 @@
+{
+  "name": "chromatic",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Creamsicle/chromatic.git"
+  },
+  "author": "danPixl",
+  "license": "Fair",
+  "bugs": {
+    "url": "https://github.com/Creamsicle/chromatic/issues"
+  },
+  "homepage": "https://github.com/Creamsicle/chromatic#readme",
+  "dependencies": {
+    "electron": "^1.6.8"
+  }
+}
