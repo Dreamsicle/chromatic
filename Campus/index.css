@@ -1,15 +1,13 @@
-body {
-    background-color: slategrey;
-    display: flex; 
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    height: 100%
+* {
+  padding: 0;
+  margin: 0
 }
 
-.body-container {
-    width: 50%;
-    height: 50%;
-    background-color: goldenrod;
-    display: inline-block
+html,body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: goldenrod;
+  width: 100%;
+  height: 100%;
 }

@@ -21,5 +21,18 @@ if (!fs.existsSync(setupFile)){
             return
         }
         console.log("hopefully that's working")
+        var status = "setupFileCreated"
     }) 
+} else {
+    var status = "setupFileExists"
+}
+
+module.exports = function(requestType) {
+    if (requestType == "status") {
+        return status
+    }
+
+    if (requestType == "location") {
+        return setupFile
+    }
 }
