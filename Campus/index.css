@@ -14,20 +14,61 @@ html,body {
     height: 100%;
 }
 
-.rainbow-sidebar {
-    background: linear-gradient(60deg, #AE1717, #A60000, #ED8A00, #F1A945, #458645, #005900, #197278, #57989C, #845576, #561643);
-    background-size: 1800% 1800%;
-    animation: rainbow 18s infinite;
-    animation-timing-function: cubic-bezier(.81,.26,.7,.7);
-    height: 100%;
-    width: 15%;
-    position: absolute;
-    top: 0;
-    left: 0
+
+
+/* fonts from circuitry */
+.serif {
+    font-family: 'Libre Baskerville' !important;
 }
 
-@keyframes rainbow { 
-    0%{background-position:0% 82%}
-    50%{background-position:100% 19%}
-    100%{background-position:0% 82%}
+.bold {
+    font-weight: 700;
+}
+
+.mono {
+    font-family: 'Overpass Mono' !important;
+}
+
+code {
+    font-family: 'Overpass Mono';
+}
+
+/* http://type-scale.com/?size=19&scale=1.414&text=Introducing%20the%20Airspace%20design%20language&webfont=Rubik&font-family=%27Rubik%27,%20serif&font-weight=400&font-family-headers=&font-weight-headers=inherit */
+
+html {font-size: 1.188em}
+
+body {
+    font-family: 'Rubik';
+    font-weight: 400;
+    line-height: 1.45;
+}
+
+h1 {
+    margin-left: 0;
+    font-weight: 400;
+    line-height: 1.2;
+    font-size: 3.998em;
+}
+
+h2, h3, h4 {
+  margin: 1.414em 0 0.5em;
+  font-weight: bold;
+  line-height: 1.2;
+  display: block
+}
+
+h1 {
+  font-size: 3.998em;
+}
+
+h2 {font-size: 2.827em;}
+
+h3 {font-size: 1.999em; }
+
+h4 {font-size: 1.414em;}
+
+small, .font_small {font-size: 0.707em;}
+
+.displaycase h2, h3, h4{
+    margin: 0 !important;
 }
