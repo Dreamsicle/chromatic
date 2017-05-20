@@ -6,13 +6,13 @@ process.title = "Chromatic"
 
 var system = require('./system/system.js')
 
-system.startup.checkAppInstallFolder()
+system.utils.startup.checkAppInstallFolder()
 
-if (system.startup.checkSetupFile("status") == "setupFileExists") {
+if (system.utils.startup.checkSetupFile("status") == "setupFileExists") {
   var pagePath = "Campus/index.html"
 } 
 
-if (system.startup.checkSetupFile("status") == "setupFileCreated") {
+if (system.utils.startup.checkSetupFile("status") == "setupFileCreated") {
   var pagePath = "system/setup/resources/index.html"
 }
 
