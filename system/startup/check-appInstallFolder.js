@@ -1,5 +1,4 @@
-var requireDirectory = require('require-directory'),
-    os = require('os'),
+var os = require('os'),
     fs = require('fs')
 
 if (process.platform == 'linux') {
@@ -11,11 +10,9 @@ if (process.platform == 'darwin') {
 }
 
 if (process.platform == 'win32') {
-    var appInstallFolder = os.homedir() + '/Chromatic Apps'
+    var appInstallFolder = os.homedir() + '\Chromatic Apps'
 }
 
 if (!fs.existsSync(appInstallFolder)){
     fs.mkdirSync(appInstallFolder)
 }
-
-module.exports = requireDirectory(module, appInstallFolder)
