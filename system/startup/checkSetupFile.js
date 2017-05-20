@@ -13,6 +13,10 @@ if (process.platform == 'win32') {
     var setupFile = os.homedir() + '\Chromatic Apps' + '\setup.json'
 }
 
+if (fs.existsSync(setupFile)) {
+    var status = "setupFileExists"
+}
+
 if (!fs.existsSync(setupFile)){
     fs.writeFile(setupFile, "this is working", function(err) {
         if(err) {
@@ -23,9 +27,7 @@ if (!fs.existsSync(setupFile)){
         console.log("hopefully that's working")
         var status = "setupFileCreated"
     }) 
-} else {
-    var status = "setupFileExists"
-}
+} 
 
 module.exports = function(requestType) {
     if (requestType == "status") {

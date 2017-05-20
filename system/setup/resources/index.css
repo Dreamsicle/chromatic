@@ -15,7 +15,7 @@ html,body {
 }
 
 .rainbow-sidebar {
-    background: linear-gradient(90deg, #AE1717, #A60000, #ED8A00, #F1A945, #458645, #005900, #197278, #57989C, #845576, #561643);
+    background: linear-gradient(60deg, #AE1717, #A60000, #ED8A00, #F1A945, #458645, #005900, #197278, #57989C, #845576, #561643);
     background-size: 1800% 1800%;
     animation: rainbow 18s infinite;
     animation-timing-function: cubic-bezier(.81,.26,.7,.7);
