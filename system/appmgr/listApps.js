@@ -8,3 +8,5 @@ function getDirectories(srcpath) {
 }
 
 console.log(getDirectories(checkAppInstallFolder()))
+
+module.exports = getDirectories(checkAppInstallFolder())
