@@ -14,6 +14,12 @@ html,body {
     height: 100%;
 }
 
+/* pane */
+.appPane {
+    width: 33.3333333%;
+    height: 98%;
+    background-color: white
+}
 
 
 /* fonts from circuitry */
@@ -34,7 +40,6 @@ code {
 }
 
 /* http://type-scale.com/?size=19&scale=1.414&text=Introducing%20the%20Airspace%20design%20language&webfont=Rubik&font-family=%27Rubik%27,%20serif&font-weight=400&font-family-headers=&font-weight-headers=inherit */
-
 html {font-size: 1.188em}
 
 body {
