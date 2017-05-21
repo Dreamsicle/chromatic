@@ -18,7 +18,7 @@ html, body {height: 100%}
 
 /* pane */
 .appPane {
-    margin: 1vh;
+    margin: 1vw;
     width: 33.3333333%;
     height: 97vh;
     background-color: white;
