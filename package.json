@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "./node_modules/.bin/electron ."
+    "start": "electron-forge start",
+    "package": "electron-forge package",
+    "make": "electron-forge make"
   },
   "repository": {
     "type": "git",
@@ -17,10 +19,42 @@
   },
   "homepage": "https://github.com/Creamsicle/chromatic#readme",
   "dependencies": {
-    "electron": "^1.6.8",
+    "electron-compile": "^6.4.1",
     "require-directory": "^2.1.1"
   },
   "devDependencies": {
-    "electron-packager": "^8.7.0"
+    "babel-plugin-transform-async-to-generator": "^6.24.1",
+    "babel-preset-env": "^1.5.0",
+    "babel-preset-react": "^6.24.1",
+    "electron-prebuilt-compile": "1.6.8"
+  },
+  "config": {
+    "forge": {
+      "make_targets": {
+        "win32": [
+          "squirrel"
+        ],
+        "darwin": [
+          "zip"
+        ],
+        "linux": [
+          "deb",
+          "rpm"
+        ]
+      },
+      "electronPackagerConfig": {},
+      "electronWinstallerConfig": {
+        "name": "Chromatic"
+      },
+      "electronInstallerDebian": {},
+      "electronInstallerRedhat": {},
+      "github_repository": {
+        "owner": "Creamsicle",
+        "name": "chromatic"
+      },
+      "windowsStoreConfig": {
+        "packageName": "chromatic"
+      }
+    }
   }
 }
