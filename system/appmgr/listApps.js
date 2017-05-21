@@ -1,5 +1,5 @@
 var fs = require('fs'),
-    path = require('path')
+    path = require('path'),
     checkAppInstallFolder = require('../utils/startup/checkAppInstallFolder.js')
 
 function getDirectories(srcpath) {
