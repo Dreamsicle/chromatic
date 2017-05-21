@@ -5,6 +5,7 @@
     <link rel = "stylesheet" type = "text/css" href = "./index.css" />
     <script>
         var system = require('../system/system.js')
+        var appInstallFolder = system.utils.startup.checkAppInstallFolder()
     </script>
  </head>
 </head>
@@ -17,6 +18,9 @@
     </script> </p>
     <p>available apps: <script>
     document.write(system.appmgr.listApps)
+    </script> </p>
+    <p>app install folder: <script>
+    document.write(appInstallFolder)
     </script> </p>
     </div>
 </body>
