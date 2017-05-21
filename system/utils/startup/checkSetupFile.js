@@ -18,7 +18,7 @@ if (fs.existsSync(setupFile)) {
 }
 
 if (!fs.existsSync(setupFile)){
-    fs.writeFile(setupFile, "this is working", function(err) {
+    fs.writeFile(setupFile, "{\"readyForSetup\": \"true\"}", function(err) {
         if(err) {
             console.log(err)
             console.log('check if check-appInstallFolder.js was run, and the apps directory is writeable')
