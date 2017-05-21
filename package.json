@@ -2,7 +2,7 @@
   "name": "chromatic",
   "version": "0.0.1",
   "description": "",
-  "main": "index.js",
+  "main": "bootstrap/index.js",
   "scripts": {
     "start": "electron-forge start",
     "package": "electron-forge package",

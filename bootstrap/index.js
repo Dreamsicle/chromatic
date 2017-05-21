@@ -4,7 +4,7 @@ const url = require('url')
 
 process.title = "Chromatic"
 
-var system = require('./system/system.js')
+var system = require('../system/system.js')
 
 system.utils.startup.checkAppInstallFolder()
 
