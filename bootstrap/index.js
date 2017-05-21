@@ -9,11 +9,11 @@ var system = require('../system/system.js')
 system.utils.startup.checkAppInstallFolder()
 
 if (system.utils.startup.checkSetupFile("status") == "setupFileExists") {
-  var pagePath = "Campus/index.html"
+  var pagePath = "../Campus/index.html"
 } 
 
 if (system.utils.startup.checkSetupFile("status") == "setupFileCreated") {
-  var pagePath = "system/setup/resources/index.html"
+  var pagePath = "../system/setup/resources/index.html"
 }
 
 // Keep a global reference of the window object, if you don't, the window will
