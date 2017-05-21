@@ -38,7 +38,6 @@
           "zip"
         ],
         "linux": [
-          "deb",
           "rpm"
         ]
       },
