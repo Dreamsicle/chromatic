@@ -1,7 +1,7 @@
 {
   "name": "chromatic",
   "version": "0.0.1",
-  "description": "",
+  "description": "A new framework for building HTML5 apps.",
   "main": "bootstrap/index.js",
   "scripts": {
     "start": "electron-forge start",
