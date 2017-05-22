@@ -19,7 +19,7 @@ html, body {height: 100%}
 /* pane */
 .appPane {
     margin: 1vh;
-    width: 33.3333333%;
+    min-width: 33.3333333%;
     height: 97vh;
     background-color: gray;
     display: inline-block;
@@ -33,6 +33,11 @@ html, body {height: 100%}
 .appLauncher {
     background-color: black;
     color: white
+}
+
+webview {
+    height: 100%;
+    width: 100%
 }
 
 
