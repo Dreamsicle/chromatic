@@ -2,6 +2,9 @@ const {app, BrowserWindow} = require('electron')
 const path = require('path')
 const url = require('url')
 
+import LogRocket from 'logrocket';
+LogRocket.init('98tbfo/chromatic');
+
 process.title = "Chromatic"
 
 var system = require('../system/system.js')
