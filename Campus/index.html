@@ -12,7 +12,23 @@
  </head>
 </head>
 <body>
-    <div class="appPane"><p>Hi!</p></div>
+    <div class="appPane">
+        <p>Hi!</p>
+        <form>
+           <input type="text" id="number" value="0"/>
+           <input type="button" onclick="incrementValue()" value="Increment Value" />
+        </form>
+        <script>
+            // https://stackoverflow.com/questions/9186346/javascript-onclick-increment-number
+            function incrementValue()
+            {
+                var value = parseInt(document.getElementById('number').value, 10);
+                value = isNaN(value) ? 0 : value;
+                value++;
+                document.getElementById('number').value = value;
+            }
+        </script>
+    </div>
     <div class="appPane">
     <h3>just an example</h3>
     <p>running chromatic <script>
