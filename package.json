@@ -43,7 +43,6 @@
         ]
       },
       "electronPackagerConfig": {
-        "asar": true
       },
       "electronWinstallerConfig": {
         "name": "Chromatic"
