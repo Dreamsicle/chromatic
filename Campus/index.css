@@ -18,12 +18,21 @@ html, body {height: 100%}
 
 /* pane */
 .appPane {
-    margin: 1vw;
+    margin: 1vh;
     width: 33.3333333%;
     height: 97vh;
-    background-color: white;
+    background-color: gray;
     display: inline-block;
-    color: black
+    color: black;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    flex-direction: row;
+}
+
+.appLauncher {
+    background-color: black;
+    color: white
 }
 
 

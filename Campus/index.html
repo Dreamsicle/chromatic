@@ -12,34 +12,28 @@
  </head>
 </head>
 <body>
-    <div class="appPane">
-        <p>Hi!</p>
-        <form>
-           <input type="text" id="number" value="0"/>
-           <input type="button" onclick="incrementValue()" value="Increment Value" />
-        </form>
+
+    <div class="appPane appLauncher">
+        <div>
+        <h3>launch an app</h3>
+        <p>available apps: <script>
+        document.write(system.appmgr.listApps)
+        </script> </p>
+
+        <input type="text" id="appToLaunch"/>
+        <button onclick="launch();" href="javascript:;">Launch!</button>
+
         <script>
-            // https://stackoverflow.com/questions/9186346/javascript-onclick-increment-number
-            function incrementValue()
-            {
-                var value = parseInt(document.getElementById('number').value, 10);
-                value = isNaN(value) ? 0 : value;
-                value++;
-                document.getElementById('number').value = value;
-            }
+          function launch(){
+              var appToLaunch = document.getElementById('appToLaunch')
+              var body = document.getElementsByTagName('body')
+              document.body.innerHTML +='<div class="appPane">' + '<webview disablewebsecurity src="' + system.utils.startup.checkAppInstallFolder() + '/' + appToLaunch.value + '/index.html" useragent="Mozilla/5.0 (Linux; Android 5.1.1; Nexus 5 Build/LMY48B; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/43.0.2357.65 Mobile Safari/537.36"></webview>' + '</div>'
+              alert(appToLaunch.value)
+          }
         </script>
+
+        </div>
     </div>
-    <div class="appPane">
-    <h3>just an example</h3>
-    <p>running chromatic <script>
-    document.write(system.info("version"))
-    </script> </p>
-    <p>available apps: <script>
-    document.write(system.appmgr.listApps)
-    </script> </p>
-    <p>app install folder: <script>
-    document.write(appInstallFolder)
-    </script> </p>
-    </div>
+
 </body>
 </html>
