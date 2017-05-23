@@ -16,6 +16,11 @@ if (system.utils.startup.checkSetupFile('status') === 'setupFileCreated') {
   var pagePath = '../system/setup/resources/index.html'
 }
 
+import { addBypassChecker } from 'electron-compile'
+addBypassChecker((filePath) => {
+  return filePath.indexOf(app.getAppPath()) === -1
+})
+
 // Keep a global reference of the window object, if you don't, the window will
 // be closed automatically when the JavaScript object is garbage collected.
 let win
