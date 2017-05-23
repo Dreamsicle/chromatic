@@ -6,7 +6,8 @@
   "scripts": {
     "start": "electron-forge start",
     "package": "electron-forge package",
-    "make": "electron-forge make"
+    "make": "electron-forge make",
+    "test": "standard"
   },
   "repository": {
     "type": "git",
@@ -27,7 +28,8 @@
     "babel-plugin-transform-async-to-generator": "^6.24.1",
     "babel-preset-env": "^1.5.0",
     "babel-preset-react": "^6.24.1",
-    "electron-prebuilt-compile": "1.6.8"
+    "electron-prebuilt-compile": "1.6.8",
+    "standard": "^10.0.2"
   },
   "config": {
     "forge": {

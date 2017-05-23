@@ -2,18 +2,18 @@ const {app, BrowserWindow} = require('electron')
 const path = require('path')
 const url = require('url')
 
-process.title = "Chromatic"
+process.title = 'Chromatic'
 
 var system = require('../system/system.js')
 
 system.utils.startup.checkAppInstallFolder()
 
-if (system.utils.startup.checkSetupFile("status") == "setupFileExists") {
-  var pagePath = "../Campus/index.html"
-} 
+if (system.utils.startup.checkSetupFile('status') === 'setupFileExists') {
+  var pagePath = '../Campus/index.html'
+}
 
-if (system.utils.startup.checkSetupFile("status") == "setupFileCreated") {
-  var pagePath = "../system/setup/resources/index.html"
+if (system.utils.startup.checkSetupFile('status') === 'setupFileCreated') {
+  var pagePath = '../system/setup/resources/index.html'
 }
 
 // Keep a global reference of the window object, if you don't, the window will
@@ -22,8 +22,8 @@ let win
 
 function createWindow () {
   // Create the browser window.
-  win = new BrowserWindow({backgroundColor: '#1c2e34', title: "Chromatic"})
-  //win.setMenu(null);
+  win = new BrowserWindow({backgroundColor: '#1c2e34', title: 'Chromatic'})
+  // win.setMenu(null);
 
   // and load the index.html of the app.
   win.loadURL(url.format({

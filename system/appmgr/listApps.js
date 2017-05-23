@@ -1,8 +1,8 @@
 var fs = require('fs'),
-    path = require('path'),
-    checkAppInstallFolder = require('../utils/startup/checkAppInstallFolder.js')
+  path = require('path'),
+  checkAppInstallFolder = require('../utils/startup/checkAppInstallFolder.js')
 
-function getDirectories(srcpath) {
+function getDirectories (srcpath) {
   return fs.readdirSync(srcpath)
     .filter(file => fs.lstatSync(path.join(srcpath, file)).isDirectory())
 }
