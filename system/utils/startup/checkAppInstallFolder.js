@@ -10,7 +10,7 @@ if (process.platform === 'darwin') {
 }
 
 if (process.platform === 'win32') {
-  var appInstallFolder = os.homedir() + '\Chromatic Apps'
+  var appInstallFolder = os.homedir() + '/Chromatic Apps'
 }
 
 if (!fs.existsSync(appInstallFolder)) {
