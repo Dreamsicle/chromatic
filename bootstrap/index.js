@@ -1,4 +1,4 @@
-const {app, BrowserWindow} = require('electron')
+import { app, BrowserWindow } from 'electron'
 const path = require('path')
 const url = require('url')
 
@@ -21,7 +21,7 @@ if (system.utils.startup.checkSetupFile('status') === 'setupFileCreated') {
 
 
 // bypass sandboxing restraints so we can read apps installed on the stateful storage
-import { addBypassChecker } from 'electron-compile'
+const { addBypassChecker } = require('electron-compile')
 addBypassChecker((filePath) => {
   return filePath.indexOf(app.getAppPath()) === -1
 })
