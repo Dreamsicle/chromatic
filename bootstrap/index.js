@@ -6,16 +6,21 @@ process.title = 'Chromatic'
 
 var system = require('../system/system.js')
 
-system.utils.startup.checkAppInstallFolder()
+system.utils.startup.checkAppInstallFolder() // check if the stateful data storage exists. if it doesn't, make it
 
+// check if our preferences file exists
 if (system.utils.startup.checkSetupFile('status') === 'setupFileExists') {
+  // if it does, then continue to the main app
   var pagePath = '../Campus/index.html'
 }
 
 if (system.utils.startup.checkSetupFile('status') === 'setupFileCreated') {
+  // if it didn't and was made, continue to setup
   var pagePath = '../system/setup/resources/index.html'
 }
 
+
+// bypass sandboxing restraints so we can read apps installed on the stateful storage
 import { addBypassChecker } from 'electron-compile'
 addBypassChecker((filePath) => {
   return filePath.indexOf(app.getAppPath()) === -1
