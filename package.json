@@ -21,7 +21,6 @@
   "homepage": "https://github.com/Creamsicle/chromatic#readme",
   "dependencies": {
     "electron-compile": "^6.4.1",
-    "logrocket": "^0.4.2",
     "require-directory": "^2.1.1"
   },
   "devDependencies": {
